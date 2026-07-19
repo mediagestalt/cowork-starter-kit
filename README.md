@@ -1,7 +1,3 @@
----
-created: 2026-07-12, 12:42
-modified: 2026-07-12, 13:38
----
 # Cowork Planning System — Starter Kit
 
 A personal planning system powered by Claude and Cowork. It gives you a daily check-in, a running task log, a project tracker, and a weekly review — all connected, all in one place. Once it's set up it mostly runs itself.
