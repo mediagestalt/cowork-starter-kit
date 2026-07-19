@@ -13,7 +13,7 @@ This kit includes everything you need to get started: an onboarding session that
 ## What this system does
 
 **Day-to-day:**
-- A morning check-in maps your day from your calendar and task list
+- A morning check-in announces your day's shape from your calendar and task list — meetings, priorities, a named first move
 - You track tasks in a daily work log using a simple checklist format
 - An end-of-day capture closes out the day and updates the log
 
@@ -65,6 +65,7 @@ cowork-starter-kit/
 │   ├── +-projects.md
 │   ├── +-projects-context.md
 │   ├── +-Tasks.md
+│   ├── +-time-block.md
 │   └── archive/
 ├── examples/                          ← a FILLED-IN system, so you can see the destination
 │   ├── work-log-example.md            ← what your work log will look like in use
@@ -130,9 +131,9 @@ In Google Calendar, click the three dots next to a calendar name → Settings �
 
 ---
 
-## The four files
+## The five files
 
-Once onboarding is done, you'll have four files in your planning folder:
+Once onboarding is done, you'll have five files in your planning folder:
 
 **`+-YYYY-work-log.md`** — Your daily task log. One entry per workday. Tasks use a simple checkbox format with due dates. The scheduled tasks read and update this file automatically.
 
@@ -140,13 +141,15 @@ Once onboarding is done, you'll have four files in your planning folder:
 
 **`+-projects-context.md`** — Claude's reference file. You don't need to read this regularly. It holds all the background detail — history, stakeholders, constraints, context — that would clutter your view but that Claude needs to give you good help. Update it when something significant changes on a project.
 
+**`+-time-block.md`** — Today's timed plan, built in your planning session when you sit down and overwritten each day. A scratch guide, not a record — no guilt if the day diverges. Keeps predictions out of the work log.
+
 **`+-Tasks.md`** — Your tasks dashboard. A single Obsidian view of every task across your notes: in progress, overdue, due today, this week, upcoming. You don't write in this file — it builds itself from your work log via the Tasks plugin. (Obsidian only; the ready-made copy is in `vault-template/+-Tasks.md`.)
 
 ---
 
 ## Day-to-day usage
 
-**Morning:** The daily check-in runs automatically and sends you a day plan. Reply if you want to discuss something; otherwise just use it as a map for the day.
+**Morning:** The daily check-in runs automatically and announces your day's shape: meetings (the only clock times), ordered priorities, a named first move, one deep-work outcome, and a "running behind? cut in this order" line. When you actually sit down, build the timed plan in your planning session — it goes in `+-time-block.md`, computed from your real start, and is overwritten daily. The plan is a prediction; the work log is the record. Keep them separate.
 
 **During the day:** Open your planning session any time to work on something — draft an email, think through a decision, update a project, add tasks to the work log.
 
@@ -169,6 +172,7 @@ Once onboarding is done, you'll have four files in your planning folder:
 - **Deadlines become work sessions.** A task sitting on its own deadline date is a wish — the system stays silent until the day it's due. When a multi-day deliverable comes up, Claude proposes dated work sessions before the deadline, including which parts Claude can do outright. You should never do the decomposition yourself.
 - **Chase every outbound request.** Every email awaiting a reply, quote request, or review ask gets a follow-up task with a date a few business days out — captured at send time, proposed automatically by the end-of-day task. Requests shouldn't live in your head.
 - **Park honestly.** Projects deliberately on hold go in a Parked section with a re-entry trigger (a date, or "when X happens"). The Friday review checks triggers only. An honest projects file with three active projects beats an aspirational one with ten.
+- **One writer at a time — reconcile, never duplicate.** If you run a live planning session alongside the scheduled tasks, several agents write the same files. Each has a lane: the live session is the in-day editor and builds the timed plan; the morning check-in announces (read-only); the end-of-day reconciles and runs a daily dedupe; the Friday review maintains projects and runs a weekly dedupe. Every writer checks for an existing entry before adding one — you should never have to dedupe by hand.
 - **Hand Claude the work, not just the typing.** Analysis, site builds, data pulls, report drafts, applications drafted from source documents — the pattern is "hand Claude X; Claude produces Y; you review." Your time goes to judgment, relationships, and the work only you can do.
 - **The planning session works best when Claude has context.** The first time you work on something, give a little background. After that, it's in the context file and you won't need to repeat yourself.
 - **Scheduled tasks can be paused anytime.** If you're on vacation or the timing isn't working, disable a task in Cowork and re-enable it when you're back.

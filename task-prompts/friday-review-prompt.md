@@ -7,7 +7,10 @@ Paste this into the prompt field when creating your Friday weekly review schedul
 ## PROMPT TEXT
 
 OBJECTIVE
-Every Friday afternoon, run a weekly review for [YOUR_NAME]: summarize what got done this week, check project status, identify what's coming next week, and close out the day with a mood check.
+Every Friday afternoon, run a weekly review for [YOUR_NAME]: summarize what got done this week, check project status, maintain the projects file, and close out the day with a mood check.
+
+COORDINATION
+You are not the only writer of these files — a live planning session and sibling scheduled tasks read and write them too. Before adding any task, note, completion, or chase, check whether it already exists for the relevant date. If it does, do not add a second copy — skip it, or update the existing entry in place. Only add what is genuinely missing.
 
 FILES
 - Work log: [YOUR_WORK_LOG_PATH]
@@ -46,7 +49,9 @@ Key dates from the calendar plus anything that needs to move on the project next
 **How's the week landing?**
 One question: how did this week feel overall? Ask [YOUR_NAME] to reply with a word or sentence — and that you'll log it.
 
-STEP 6 — When [YOUR_NAME] replies with their mood/vibe:
+STEP 6 — When [YOUR_NAME] replies:
+- Append a dated status entry to any project they give an update on in the projects file — under that project's Status block, append, don't overwrite. Keep the last 2–3 entries per project; prune older ones.
+- Run the weekly dedupe sweep: scan this week's tasks and Other notes across all day headings for entries that say the same thing and merge them; flag anything ambiguous rather than deleting.
 - Add a Friday Evening entry to today's work log under "Other notes": **Mood:** [their word or phrase]
 
 CONSTRAINTS

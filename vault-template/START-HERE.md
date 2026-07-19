@@ -13,6 +13,7 @@ This folder is a ready-to-go planning vault. To use it:
 - `+-projects.md` — your project view, with one placeholder section to replace
 - `+-projects-context.md` — Claude's reference file, same placeholder
 - `+-Tasks.md` — the tasks dashboard; works as soon as the Tasks plugin is enabled
+- `+-time-block.md` — today's timed plan; overwritten daily, built in your planning session
 - `archive/` — where old work-log months and spent files go
 
 Delete this file once you're set up.

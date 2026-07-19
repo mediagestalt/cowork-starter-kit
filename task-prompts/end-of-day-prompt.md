@@ -9,6 +9,9 @@ Paste this into the prompt field when creating your end-of-day scheduled task. R
 OBJECTIVE
 At the end of each workday, help [YOUR_NAME] close out the day: review what got done, update the work log, and check in on how the day felt.
 
+COORDINATION
+You are not the only writer of these files — a live planning session and sibling scheduled tasks read and write them too. Before adding any task, note, completion, or chase, check whether it already exists for the relevant date. If it does, do not add a second copy — skip it, or update the existing entry in place. Only add what is genuinely missing.
+
 FILES
 - Work log: [YOUR_WORK_LOG_PATH]
 - Projects (your view): [YOUR_PROJECTS_PATH]
@@ -35,6 +38,8 @@ STEP 3 — When [YOUR_NAME] replies, update the work log:
 STEP 4 — Chase scan. Scan today's narrative bullets and their reply for outbound requests: "emailed X," "asked Y," "waiting on Z," quote requests, review requests. For each one with no existing follow-up task, propose a chase task with a date 2–5 business days out: "You emailed [X] today — want a chase task for [date]?" Add the ones they approve. Requests should never live in anyone's head.
 
 STEP 5 — Decomposition check. If they mention a new multi-day deliverable with a deadline (an application, a report, a website, a presentation), do NOT log it as a single task on the deadline date. Propose 2–4 dated work sessions instead — the last at least two days before the deadline — including which parts Claude can do versus which parts only they can. Add the sessions once they agree. A task on a deadline date is a wish; work sessions before it are a plan.
+
+STEP 6 — Dedupe sweep. After updating, scan today's section (tasks and Other notes) for duplicates or near-duplicates — the same task captured twice, the same email noted by two writers — and merge each into a single entry.
 
 CONSTRAINTS
 - Only update today's entry in the work log. Do not touch previous days.

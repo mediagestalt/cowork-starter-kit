@@ -46,7 +46,7 @@ Ask these questions conversationally, a few at a time. Wait for answers before c
 **Round 5 — Work style:**
 10. What kinds of tasks do you typically track? (Meetings, writing, research, admin, client work, etc.)
 11. Do you have any preferences for how you like to work — or things you'd like Claude to know about how to support you?
-11b. Is there work that deserves a protected daily or weekly time block — reading, writing, deep work on a project? If yes, when? (These become "standing blocks" the morning check-in prints into every day plan as fixtures.)
+11b. Is there work that deserves a protected daily or weekly time block — reading, writing, deep work on a project? If yes, when? (These become "standing blocks": the morning check-in names them in the day's shape, and their clock placement happens in the live planning session's time block.)
 11c. When a new request lands and your plate is already full, what usually happens? Do you find it easy or hard to say no? (If hard: Claude will act as a capacity check — when new commitments come up, it names what they displace, and if the honest answer is no, it drafts the decline so saying no costs one review instead of an hour of dread.)
 11d. When is a piece of your work "done"? Do you tend to ship things, or keep polishing past the point where it matters? (If the latter: Claude will name when something has crossed "done enough" — with a reason, not just reassurance — so finished work actually leaves the desk.)
 11e. When you're behind or a week went sideways, what response actually helps you — direct accountability, or a gentler read of the situation? (This calibrates the tone of the check-ins and reviews. For some people an unfinished task list reads as information; for others it reads as an indictment. Claude should know which.)
@@ -60,7 +60,7 @@ Ask these questions conversationally, a few at a time. Wait for answers before c
 
 ## PHASE 3 — Build the files
 
-Once you have all the answers, build the following four files in their workspace folder. Show them each one before writing it, and confirm before moving on.
+Once you have all the answers, build the following five files in their workspace folder. Show them each one before writing it, and confirm before moving on.
 
 **If they copied `vault-template/` from the starter kit**, the four files already exist as skeletons (plus a `START-HERE.md` and an `archive/` folder). Don't create duplicates — populate the existing files: replace the placeholder project sections with their real projects, and update the work log's first entry to today. Offer to delete `START-HERE.md` once setup is done. Check the work log filename matches the current year and rename it if not.
 
@@ -192,6 +192,12 @@ If they're not using Obsidian (or skipped the Tasks plugin), create it anyway an
 
 ---
 
+### File 5: Time block — `+-time-block.md`
+
+The daily timed plan, overwritten each day. Copy from `vault-template/+-time-block.md` (already in place if they started from the vault template). Explain the principle: **the work log holds only what happened — meetings with notes and task tracking. Timed day-plans are predictions, and they live here instead.** The plan gets built in the live planning session when the person actually sits down, with times computed from their real start. No guilt if the day diverges — this file is a scratch guide, not a record.
+
+---
+
 ## PHASE 4 — Draft the planning session instructions
 
 Generate a draft of the project instructions for their **ongoing** Cowork planning session. This is the text they'll paste into the "Project instructions" field when they create the session they'll use every day. Present the draft and ask if they want to change anything before they copy it.
@@ -202,11 +208,12 @@ The ongoing planning session instructions should cover:
 - What it does NOT do (be specific — no personal tasks, no creative writing, etc.)
 - Their workspace folder path
 - The planning files and what each one is for
+- **Lanes — one owner per job** — include this: the live planning session is the primary in-day editor and builds the timed plan in +-time-block.md (overwritten daily); the morning check-in announces the day (read-only); the end-of-day reconciles, captures, and dedupes; the Friday review maintains the projects file and dedupes weekly. Every writer checks for an existing entry before adding one — reconcile, never duplicate. The work log holds only what happened; timed plans never go in it.
 - **Working rules** — include these three, near-verbatim:
   - *Deadlines become work sessions (Claude's job).* When a multi-day deliverable with a deadline comes up, never log it as a single task on the deadline date. Claude proposes 2–4 dated work sessions — the last at least two days before the deadline — and says which parts Claude can do versus which parts only the person can. They should never have to do the decomposition themselves.
   - *Chase every outbound request.* Every request sent out (an email awaiting reply, a quote request, a review ask) gets a chase task with a date 2–5 business days out, captured when the request is logged. Requests must not live in anyone's head.
   - *Delegation-first.* Before logging work for the person, ask: can Claude do the substance, not just the drafting? Analysis, builds, data pulls, report drafts, application drafts from source documents — propose the handoff version first ("hand Claude X; Claude produces Y; you review"). Their time should go to judgment, relationships, and the work only they can do.
-- **Standing blocks** (if they named any in Round 5): list them, and note the morning check-in prints them into every day plan as fixtures.
+- **Standing blocks** (if they named any in Round 5): list them, and note the morning check-in names them in the day's shape; the live session places them on the clock in +-time-block.md.
 - **Personal calibration** (from 11c–11e, only where relevant — skip what doesn't apply):
   - If saying no is hard: *Capacity check.* When a new commitment comes up, Claude names what it would displace before it gets accepted. If the honest answer is no, Claude drafts the decline. Protecting their time is part of the job, and a drafted no is easier to send than a blank page.
   - If they over-polish: *Done enough.* Claude gives an honest judgment of when work has crossed "done" — specific ("this does what it needs to do; further polish won't change the outcome"), not flattering. The Friday review counts shipped work as wins, including work shipped imperfect.
@@ -240,7 +247,7 @@ Present each customized prompt to them and let them copy it.
 ## PHASE 6 — Wrap up
 
 Confirm:
-- All four files exist in their workspace folder
+- All five files exist in their workspace folder
 - They have a copy of the planning session instructions ready to paste
 - They know how to create scheduled tasks if they want them (Cowork → Scheduled Tasks)
 - They know their next step: create the ongoing planning session and start using it
